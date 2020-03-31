@@ -12,6 +12,9 @@
             </a>
           </li>
           <% if logged_in? %>
+           <li class="nav-item">
+              <%= link_to 'Events', events_path, class:'nav-item nav-link' %>
+            </li>
             <li class="nav-item">
               <%= link_to 'Profile', current_user, class:'nav-item nav-link' %>
             </li>
