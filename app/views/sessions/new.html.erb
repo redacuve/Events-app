@@ -1,0 +1,11 @@
+<%= form_with(url: sessions_path, class: 'form-signup') do |form| %>
+    <h2 class="h3 mb-3 font-weight-normal">Please Log In:</h2>
+    <div class="field">
+        <%= form.label(:email) %>
+        <%= form.email_field(:email, class: 'form-control', placeholder: 'Email address', required: true) %>
+    </div>
+    <br>
+    <div class="actions">
+        <%= form.submit "Sign Up", class: 'btn btn-lg btn-primary btn-block' %>
+    </div>
+<% end %>
