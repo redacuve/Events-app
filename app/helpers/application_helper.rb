@@ -1,5 +1,4 @@
 module ApplicationHelper
-  
   def title(page_title = '')
     base_title = 'Events App'
     if page_title.empty?
@@ -21,5 +20,4 @@ module ApplicationHelper
       flash_type.to_s
     end
   end
-
 end
