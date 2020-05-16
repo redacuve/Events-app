@@ -8,8 +8,11 @@
     <span class=""><%= @user.email %></span>
 </div>
 <div class="">
-    <span class="">Created at:</span>
-    <span class=""><%= @user.created_at %></span>
+    <span class="">Member since:</span>
+    <span class=""><%= time_ago_in_words @user.created_at %> ago</span>
+</div>
+<div>
+    <%= button_to  "Create Event" %>
 </div>
 <% if @user.events %>
    <%= render 'events/event', events: @user.events %>
